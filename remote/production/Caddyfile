@@ -1,0 +1,8 @@
+{
+  email ss.noah@gmail.com
+}
+
+greenlight.gravender.net {
+  respond /debug/* "Not Permitted" 403
+  reverse_proxy localhost:4000
+}
