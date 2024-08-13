@@ -16,9 +16,12 @@ import (
 	_ "github.com/lib/pq"
 	"greenlight.gravender.net/internal/data"
 	"greenlight.gravender.net/internal/mailer"
+	"greenlight.gravender.net/internal/vcs"
 )
 
-const version = "1.0.0"
+var (
+	version = vcs.Version()
+)
 
 type config struct {
 	port int
